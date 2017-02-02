@@ -22,37 +22,138 @@ body {
 	clear: both;
 }
 
-/***********
-
-MENU
-
-************/
+/****************************
+*
+* MENU
+*
+****************************/
 
 header {
-	text-align: center;
 	color: white;
-	padding-top: 20px;
+	position: relative;
 	font-size: 26px;
 	height: 10%;
 	width: 100%;
-	background-color: #000;
+	background-color: rgba(0,0,0,0.4);
 	position: fixed;
-	z-index: 1;
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+	z-index: 100;
+} 
+.manu{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 
+.manu .logo{
+	margin: 0px 114px;
+}
 
-/***********
+.manu a:hover{
+	color: #ED237A;
+}
 
-LEAF ANIMATION
+/* .fond {
+  height: 200px;
+  background: cover;
+  background-image: url(../images/fond.png);
+  position: relative;
+}
 
-************/
+.socialGauche {
+  padding-left: 30px;
+  padding-top: 80px;
+  
+}
+
+.socialGauche img {
+  width: 35px;
+  padding-left: 10px;
+}
+.socialDroite {
+  float: right;
+  padding-right: 30px;
+}
+
+.socialDroite img {
+  width: 35px;
+  padding-left: 10px;
+}
+
+.fond h1 {
+  font-family: "mainleveregular", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  left: 250px;
+  top: 37%;
+  color: #fff;
+  z-index: 2;
+  transition: .3s;
+}
+
+.fond h1:hover {
+  color: #ed237a;
+}
+
+.fond h2 {
+  font-family: "mainleveregular", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  right: 250px;
+  top: 37%;
+  color: #fff;
+  z-index: 2;
+  transition: .3s;
+}
+
+.fond h2:hover {
+  color: #ed237a;
+}
+
+.fond .logo p {
+  font-family: "mainleveregular", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 25px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  margin-left: -75px;
+  top: 15%;
+  margin-top: -5px;
+  color: #fff;
+  z-index: 2;
+  background: grey;
+  text-align: center;
+} */
+
+
+/****************************
+*
+* LEAF ANIMATION
+*
+****************************/
+
+
+/****************************
+text + animation container 
+****************************/
 
 .tropical-presentation{
 	height: 80%;
-	background-color: cyan;
+	background-color: #222;
 	position: relative;
 }
+
+/****************************
+animation container 
+****************************/
 
 .leaf-container{
 	width: 100%;
@@ -61,9 +162,11 @@ LEAF ANIMATION
 	overflow: hidden;
 }
 
-.bg{
+/* jungle bg */
+.jungle{
 	position: absolute;
-	top: -200px;
+	top: -10%;
+	left: -30%;
 	z-index: 2;
 	animation-name: scaling-bg;
 	animation-duration: 1s;
@@ -76,6 +179,7 @@ LEAF ANIMATION
 	100%{transform: scale(5);}
 }
 
+/* 1st type of leaf */
 .leaf-1{
 	position: absolute;
 	top: 0px;
@@ -84,13 +188,14 @@ LEAF ANIMATION
 	animation-name: scaling-leaf-one;
 	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.72,-0.18, 1, 1);
+	animation-timing-function: ease-in;
 }
 @keyframes scaling-leaf-one{
 	0%{transform-origin: -10% 50%; right: -5%;}
 	100%{transform-origin: -60% 50%; right: -30%;}
 }
 
+/* 2nd type of leaf */
 .leaf-2{
 	position: absolute;
 	bottom: -5%;
@@ -99,13 +204,14 @@ LEAF ANIMATION
 	animation-name: scaling-leaf-two;
 	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(0.72,-0.18, 1, 1);
+	animation-timing-function: ease-in;
 }
 @keyframes scaling-leaf-two{
 	0%{transform-origin: 110% 20%; left: -5%;}
 	100%{transform-origin: 160% 20%; left: -30%;}
 }
 
+/* animated radial gradient */
 .radial-gradient{
 	width: 100%;
 	height: 100%;
@@ -113,7 +219,7 @@ LEAF ANIMATION
 	background-image: radial-gradient(circle at center , rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 15%);
 	z-index: 1;
 	animation-name: scaling-rg;
-	animation-duration: 0.8s;
+	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 }
@@ -123,7 +229,9 @@ LEAF ANIMATION
 	100%{background-image: radial-gradient(circle at center , rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 100%);}
 }
 
-/* TEXT */
+/****************************
+text container 
+****************************/
 
 .tropical-text{
 	background-image: url(../images/bg.png);
@@ -153,21 +261,25 @@ LEAF ANIMATION
 	line-height: 180%;
 }
 
-/*********
+/****************************
+*
+* INFO + MAP
+*
+****************************/
 
-INFO + MAP
 
-*********/
-
+/* container */
 .tour-info{
 	background-color: #222;
-	height: 1500px;
 }
+
+/* title container */
 .info-title{
 	height: 100px;
 	text-align: center;
 	position: relative;
 }
+
 .info-title h2{
 	position: absolute;
 	top: 50%;
@@ -179,19 +291,132 @@ INFO + MAP
 	color: white;
 }
 
-.events{
-	height: 100px;
-	width: 50%;
-	float: left;
-}
-
+/* map */
 .map{
-	width: 50%;
-	float: left;
+	position: relative;
+	width: 100%;
 	text-align: center;
 }
 
 .map img{
 	margin: 30px 0px;
-	width: 75%;
+	width: 70%;
+}
+
+.pin{
+	position: absolute;
+	width: 40px!important;
+	transition: all 0.15s ease-in-out;
+}
+
+.pin:hover{
+	transform: translateY(-4px);
+}
+
+.pin-1{
+	left: 41%;
+	top : 15%;
+}
+
+.pin-2{
+	left: 68%;
+	top: 18%;
+}
+
+.pin-3{
+	left: 50%;
+	top : 55%;
+}
+
+.pin-4{
+	left: 50%;
+	top: 13%;
+}
+.pin-5{
+	left: 60%;
+	top : 32%;
+}
+
+.pin-6{
+	left: 55%;
+	top: 33%;
+}
+.pin-7{
+	left: 45%;
+	top : 33%;
+}
+.pin-8{
+	left: 62%;
+	top : 52%;
+}
+.pin-9{
+	left: 67%;
+	top: 28%;
+}
+.pin-10{
+	left: 52%;
+	top : 52%;
+}
+
+.pin-11{
+	left: 61%;
+	top: 17%;
+}
+.pin-12{
+	left: 58%;
+	top : 46%;
+}
+
+.pin-13{
+	left: 74%;
+	top: 50%;
+}
+
+/********************
+
+        FOOTER
+
+*********************/
+footer {
+    background-image: url(../images/bg.png);
+    width: 100%;
+    position: relative;	
+}
+
+.palmiers {
+	z-index: 1000;
+    width: 15%;
+    margin-left: 5%;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+div[class^="socialNetwork"] div img {
+    margin: 2%;
+    width: 30%;
+}
+
+.socialNetwork1 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.socialNetwork1>div a p{
+    padding:0;
+    padding-left: 20%;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    left: -5%;
+    z-index: 2;
+    margin-top: 20%;
+}
+
+.socialNetwork1>div {
+    width: 100%;
 }
