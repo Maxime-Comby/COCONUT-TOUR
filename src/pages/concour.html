@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="manu-container">
+            <div class="manu">
+                <a href="products.html" alt="">Coco produits</a>
+                <a href="../../index.html" alt="" class="logo"><img src="../images/logo.png" alt=""></a>
+                <a href="concour.html" alt="">Cocomunauté</a> 
+            </div>
+        </div>
+    </header>
+    <section class="concours row ">
+        <div class="columns large-offset-2 large-8 medium 6 small-12">
+            <h2> Jeu Concours</h2>
+        </div>  
+        <h3 class="columns large-offset-2  medium-offset-2 small-offset-2 large-8 medium 8 small-8">Participez à notre concours d'affiche !!</h3>
+        <div class="columns large-offset-2  medium-offset-2 small-offset-1 large-8 medium 8 small-10"> 
+            <p>
+                Le Principe ? avec le #ConcoursCoco postez sur twitter vos meilleurs montages sérieux ou non à propos de Vaivai et du jus de coco ! Les meilleurs seront affichés sur le site et pourront gagner un voyage au Brésil !
+            </p>
+        </div>
+        <div class="affiche columns large-6 medium-12 small-12">
+           <img class="afficheConcours " src="../images/obama-coco.png" alt="Obama buvant dans une noix de coco">
+           <h3>Affiche d'Obama : envoyé par Jessy James</h3>
+       </div>
+       <div class="affiche columns large-6 medium-12 small-12">
+           <img class=" afficheConcours " src="../images/van.png" alt="Obama buvant dans une noix de coco">
+           <h3>Affiche du van Vaivai : envoyé par Michel Michou</h3>
+       </div>
+       <div class="affiche columns large-6 medium-12 small-12">
+           <img class=" afficheConcours " src="../images/affiche-van.png" alt="Affiche Van">
+           <h3>Affiche du van Vaivai : envoyé par Michel Michou</h3>
+       </div>
+       <div class="affiche columns large-6 medium-12 small-12">
+           <img class=" afficheConcours " src="../images/affiche-coco.png" alt="Affiche Coconut">
+           <h3>Affiche du van Vaivai : envoyé par Michel Michou</h3>
+       </div>
+   </section>
+
+   <container>
+   <h1>Culture coco</h1>
+    <div class="titre">
+        <p> Quelles-sont vos connaissances sur la culture coco ?
+        </p>
+        <p class="quiz"> Répondez à notre QUIZ A LA NOIX pour le savoir ! </p>
+    </div>
+
+    <form method="post" action="#" onsubmit="return checkForm()">
+        <div class="row">
+            <div class="large-6 columns">
+                <div class="question">
+                    <label class="intitule"> Qu’est-ce que la noix de coco ? :</label>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answer-a" />
+                        <label for="question-1-answer-a" class="right-answer-1">Un fruit</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answer-b" />
+                        <label for="question-1-answer-b">Une noix</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule">Quand a été ramener la première noix de coco ?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answer-a" />
+                        <label for="question-2-answer-a">1492</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answer-b" />
+                        <label for="question-2-answer-b">10 ans après le tour du monde de Magellan</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answer-c" />
+                        <label for="question-2-answer-c" class="right-answer-2">500 ans avant Vaïvaï</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answer-d" />
+                        <label for="question-2-answer-d">en l'an 3</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule">le terme « coco » vient du :
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answer-a" />
+                        <label for="question-3-answer-a">Français</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answer-b" />
+                        <label for="question-3-answer-b" class="right-answer-3">Portugais</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answer-c" />
+                        <label for="question-3-answer-c">Brésilien</label>
+                        <div>
+                            <input type="radio" name="question-3-answers" id="question-3-answer-d" />
+                            <label for="question-3-answer-d">Philippin</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="question">
+                    <div>
+                        <label class="intitule">Qui à fait la première description exacte de la noix de coco ?</label>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="question-4-answers" id="question-4-answer-a" />
+                            <label for="question-4-answer-a">Magellan</label>
+                        </div>
+                        <input type="radio" name="question-4-answers" id="question-4-answer-b" />
+                        <label for="question-4-answer-b" class="right-answer-4">Antonio Pigafetta</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answer-c" />
+                        <label for="question-4-answer-c">Marco Polo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answer-d" />
+                        <label for="question-4-answer-d">Vaïvaï</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule">Lorsque la noix de coco est verte, elle contient :</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answer-a" />
+                        <label for="question-5-answer-a" class="right-answer-5">50 cl d'eau de coco</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answer-b" />
+                        <label for="question-5-answer-b">1L d'eau de coco</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answer-c" />
+                        <label for="question-5-answer-c">1,5L d'eau de coco</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answer-d" />
+                        <label for="question-5-answer-d">2L d'eau de coco</label>
+                    </div>
+                </div>
+            </div>
+            <div class="large-6 columns">
+                <div class="question">
+                    <div>
+                        <label class="intitule">Un cocotier produit : </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answer-a" />
+                        <label for="question-6-answer-a" class="right-answer-6">25 à 75 noix de coco par an</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answer-b" />
+                        <label for="question-6-answer-b">5 à 20 noix de coco par an</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answer-c" />
+                        <label for="question-6-answer-c">70 à 100 noix de coco par an
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-6-answers" id="question-6-answer-d" />
+                        <label for="question-6-answer-d">110 à 135 coco par an
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule">Comment l'eau de coco est-elle crée ?</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answer-a" />
+                        <label for="question-7-answer-a">grâce au climat tropical</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answer-b" />
+                        <label for="question-7-answer-b">le cocotier absobre l'eau de pluie et l'amène par capillarité jusqu’à la noix</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answer-c" />
+                        <label for="question-7-answer-c"> la sève du cocotier se disoud dans la noix et au contact de celle-ci, elle se liquéfie </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-7-answers" id="question-7-answer-d" />
+                        <label for="question-7-answer-d" class="right-answer-7">l'eau est captée par le système racinaire du cocotier, puis amenée par capillarité jusqu’à la noix </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule">Pendant combien de temps le cocotier produit des noix ? </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answer-a" />
+                        <label for="question-8-answer-a" class="right-answer-8">80 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answer-b" />
+                        <label for="question-8-answer-b">10 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answer-c" />
+                        <label for="question-8-answer-c">50 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-8-answers" id="question-8-answer-d" />
+                        <label for="question-8-answer-d">73 ans </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule">Combien de temps faut-il attendre avant de voir les premières noix de coco ? </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answer-a" />
+                        <label for="question-9-answer-a">3 mois</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answer-b" />
+                        <label for="question-9-answer-b">3 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answer-c" />
+                        <label for="question-9-answer-c" class="right-answer-9">5 à 6 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-9-answers" id="question-9-answer-d" />
+                        <label for="question-9-answer-d">10 à 18 ans </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <div>
+                        <label class="intitule"> La récolte des noix de coco une fois tombée sur le sol ne sert que pour la confection de l’huile de</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answer-a" />
+                        <label for="question-10-answer-a">coco vierge</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answer-b" />
+                        <label for="question-10-answer-b" class="right-answer-10">coprah</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answer-c" />
+                        <label for="question-10-answer-c">cocho</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-10-answers" id="question-10-answer-d" />
+                        <label for="question-10-answer-d">Cocâ </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="center">
+                    <input class="pointer" type="submit" name="sub" id="sub" />
+                </div>
+            </div>
+            <div class="large-12 columns stats">
+                <div id="results">
+                    <p id="score" class="dnone stat"></p>
+                    <p id="commentaire" class="dnone"></p>
+                    <p id="insta-link" class="dnone">
+                        <a href="https://www.vaivai.fr/fr/culture-coco/" target="blank" title="lien vers instagram">CLIQUE ICI pour avoir les explications aux réponses !</a>
+                        <a href="https://www.instagram.com/vaivaiconnexion/" target="blank" title="lien vers instagram">#Ecocotour</a>
+                        <div class="tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Vaivaiconnexion">Tweet</a>
+                            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</container>
+
+   <footer>
+    <div class="palmiers"><img src="../images/palm.png" alt="palmier"></div>
+    <div class="socialNetwork1">
+        <div class="row">
+            <div class=" large-3 medium-3 small-0"></div>
+            <a class="columns large-2 medium-2 small-4 " href="https://www.youtube.com/user/Vaivaiconnexion"><img src="../images/youtube.png" alt="Youtube"></a>
+            <a class="columns large-2 medium-2 small-4 " href="https://twitter.com/vaivaiconnexion"><img src="../images/twitter.png" alt="twitter"></a>
+            <a class="columns large-2 medium-2 small-4 " href="https://fr.pinterest.com/vaivai/"><img src="../images/pinterest.png" alt="Pinterest"> </a>     
+            <a class="columns large-2 medium-2 small-4 " href="https://www.linkedin.com/company/va-va-/"><img src="../images/linkedin.png" alt="linkedin"></a>
+            <a class="columns large-2 medium-2 small-4 " href="https://www.facebook.com/vaivaifrance/"><img src="../images/facebook.png" alt="facebook"></a>
+            <a class="columns large-2 medium-2 small-4 " href="https://www.instagram.com/vaivaiconnexion/"><img src="../images/instagram.png" alt="instagram"></a>
+            <div class=" large-3 medium-3 small-0"></div>
+        </div>
+        <div class="row">
+            <a class="columns large-3 medium-6 small-3" href="https://www.vaivai.fr/fr/"><p class="mentions">© 2017 Vaivai SAS</p></a>
+            <a class="columns large-3 medium-6 small-3" href="https://www.vaivai.fr/fr/conditions-utilisation/"><p class="mentions">Conditions d’utilisation</p></a>
+            <a class="columns large-3 medium-6 small-3" href="https://www.vaivai.fr/fr/mentions-legales/"><p class="mentions">Mentions légales</p></a>
+            <a class="columns large-3 medium-6 small-3" href="https://www.vaivai.fr/fr/vie-privee/"><p>Vie privée</p></a>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="../js/vendor/jquery.js"></script>
+<script type="text/javascript" src="../js/vendor/what-input.js"></script>
+<script type="text/javascript" src="../js/vendor/foundation.js"></script>
+<script type="text/javascript" src="../js/increase.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script src="../js/main.js"></script>  
+</body>
+</html>
